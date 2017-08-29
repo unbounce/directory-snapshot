@@ -1,6 +1,6 @@
 # directory-snapshot
 
-Given any directory, reads all files into memory so that it can be serialized as a snapshot
+Given any directory, reads all source files into memory so that it can be serialized as a snapshot
 ([Jest](https://github.com/facebook/jest) or [Ava](https://github.com/avajs/ava)). Useful for
 testing tools that write to the file system.
 
