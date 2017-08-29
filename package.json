@@ -1,6 +1,6 @@
 {
   "name": "directory-snapshot",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Serialize contents of a directory for snapshot testing",
   "main": "build/index.js",
   "types": "build/index.d.ts",
