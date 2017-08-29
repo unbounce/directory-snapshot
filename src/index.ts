@@ -25,8 +25,6 @@ export const directorySnapshot = (basePath: string): DirectorySnapshot => {
     const path = relative(basePath, item.path);
     const contents = item.stats.isDirectory() ? '' : readFileSync(item.path).toString();
 
-    JSON.stringify(item.stats);
-
     return {
       stats: {
         isDirectory: stats.isDirectory(),
