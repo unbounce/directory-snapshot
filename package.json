@@ -1,0 +1,44 @@
+{
+  "name": "directory-snapshot",
+  "version": "0.0.0",
+  "description": "Serialize contents of a directory for snapshot testing",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "author": "Gabe Scholz (Unbounce)",
+  "license": "MIT",
+  "scripts": {
+    "prepublish": "yarn test && rm -rf build && yarn build",
+    "build": "tsc",
+    "release": "np",
+    "test": "jest"
+  },
+  "repository": {
+    "url": "https://github.com/unbounce/directory-snapshot"
+  },
+  "devDependencies": {
+    "@types/graceful-fs": "^4.1.0",
+    "@types/jest": "^20.0.8",
+    "@types/klaw-sync": "^1.1.2",
+    "@types/node": "^8.0.25",
+    "jest": "^20.0.4",
+    "np": "^2.16.0",
+    "ts-jest": "^20.0.10",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {
+    "graceful-fs": "^4.1.11",
+    "klaw-sync": "^3.0.0"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
+  }
+}

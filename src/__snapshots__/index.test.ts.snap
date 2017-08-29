@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`directory creates a serializable directory 1`] = `
+Object {
+  "contents": Array [
+    Object {
+      "contents": "{
+  \\"name\\": \\"project\\",
+  \\"version\\": \\"1.0.0\\",
+  \\"main\\": \\"index.js\\",
+  \\"license\\": \\"MIT\\"
+}
+",
+      "path": "package.json",
+      "stats": Object {
+        "isDirectory": false,
+        "isFile": true,
+        "isSocket": false,
+        "isSymbolicLink": false,
+      },
+    },
+    Object {
+      "contents": "",
+      "path": "src",
+      "stats": Object {
+        "isDirectory": true,
+        "isFile": false,
+        "isSocket": false,
+        "isSymbolicLink": false,
+      },
+    },
+    Object {
+      "contents": "console.log('hello, world!');
+",
+      "path": "src/index.js",
+      "stats": Object {
+        "isDirectory": false,
+        "isFile": true,
+        "isSocket": false,
+        "isSymbolicLink": false,
+      },
+    },
+  ],
+}
+`;
