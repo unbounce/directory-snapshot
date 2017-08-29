@@ -7,7 +7,7 @@ testing tools that write to the file system.
 ### Use
 
 ```ts
-import { execSync } from 'child_process;
+import { execSync } from 'child_process';
 import { dss } from 'directory-snapshot';
 
 test('creates a new project', () => {
