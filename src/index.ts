@@ -23,7 +23,7 @@ export const directorySnapshot = (basePath: string): DirectorySnapshot => {
   const contents = klawSync(basePath).map((item): File => {
     const { stats } = item;
     const path = relative(basePath, item.path);
-    const contents = item.stats.isDirectory() ? '' : readFileSync(item.path).toString();
+    const contents = item.stats.isFile() ? readFileSync(item.path).toString() : '';
 
     return {
       stats: {
