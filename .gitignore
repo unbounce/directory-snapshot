@@ -2,4 +2,4 @@ node_modules
 yarn-error.log
 .tmp
 .DS_Store
-lib
+build
